@@ -25,11 +25,12 @@ int main(int argc, char *argv[])
     std::cerr << "usage: " << argv[0] << " <functionid> <a> <b> <n> <intensity>" << std::endl;
     return -1;
   }
-  float fId = argv[1];
-  float a = argv[2];
-  float b = argv[3];
-  int n = argv[4];
-  int intensity = argv[5];
+  char* character;
+  float fId = strof(argv[1],&character);
+  float a = strof(argv[2],&character);
+  float b = strof(argv[3],&character);
+  int n = strof(argv[4],&character);
+  int intensity = strof(argv[5],&character);
   std::chrono::system_clock::time_point start = std::chrono::system_clock::now();
   float partOne = (b - a) / n;
   float finalOutput = 0;
