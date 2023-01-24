@@ -26,10 +26,10 @@ int main(int argc, char *argv[])
     return -1;
   }
   char* character;
-  float fId = strof(argv[1],&character);
-  float a = strof(argv[2],&character);
-  float b = strof(argv[3],&character);
-  int n = strof(argv[4],&character);
+  float fId = strtof(argv[1],&character);
+  float a = strtof(argv[2],&character);
+  float b = strtof(argv[3],&character);
+  int n = strtof(argv[4],&character);
   int intensity = strof(argv[5],&character);
   std::chrono::system_clock::time_point start = std::chrono::system_clock::now();
   float partOne = (b - a) / n;
