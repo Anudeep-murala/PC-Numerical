@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
   float a = strtof(argv[2],&character);
   float b = strtof(argv[3],&character);
   int n = strtof(argv[4],&character);
-  int intensity = strof(argv[5],&character);
+  int intensity = strtof(argv[5],&character);
   std::chrono::system_clock::time_point start = std::chrono::system_clock::now();
   float partOne = (b - a) / n;
   float finalOutput = 0;
