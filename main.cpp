@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
   for (int i = 0; i < n; i++)
   {
     partTwo = a + ((i + 0.5) * partOne);
-    switch (fId)
+    switch ((int) fId)
     {
     case 1:
       finalOutput = finalOutput + f1(partTwo,intensity);
